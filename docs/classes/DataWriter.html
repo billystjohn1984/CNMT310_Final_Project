@@ -106,7 +106,7 @@
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="../reports/errors.html">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">137</span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">120</span>
                                 </a>
                             </li>
                             <li>
@@ -136,10 +136,10 @@
                                 <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-1490163351"></a>
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-649249491"></a>
                                 <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
             </div>
-            <div id="namespace-1490163351" class="accordion-body collapse in">
+            <div id="namespace-649249491" class="accordion-body collapse in">
                 <div class="accordion-inner">
 
                     
@@ -306,16 +306,21 @@
             <article class="method">
                 <h3 class="public ">writePlaylist()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">writePlaylist(  <span class="argument">$playlistEntry</span>) </pre>
-                <p><em></em></p>
-                
+                <pre class="signature" style="margin-right: 54px;">writePlaylist(\PlaylistEntry  <span class="argument">$playlistEntry</span>, \DB  <span class="argument">$db</span>) </pre>
+                <p><em>Write a playlist entry to the database.</em></p>
+                <p>Write a playlist entry to the database by calling all of the containted dtos write functions in order.</p>
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td></td>
+                                <td><a href="../classes/PlaylistEntry.html">\PlaylistEntry</a></td>
                                 <td>$playlistEntry </td>
                                 <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>\DB</td>
+                                <td>$db </td>
+                                <td><p>The database object to write to.</p></td>
                             </tr>
                                             </table>
                 
@@ -340,26 +345,28 @@
             <article class="method">
                 <h3 class="public ">writeSong()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">writeSong(  <span class="argument">$song</span>,   <span class="argument">$db</span>) </pre>
-                <p><em></em></p>
+                <pre class="signature" style="margin-right: 54px;">writeSong(\Song  <span class="argument">$song</span>, \DB  <span class="argument">$db</span>) : \DataWriter</pre>
+                <p><em>Write a song to the database.</em></p>
                 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td></td>
+                                <td><a href="../classes/Song.html">\Song</a></td>
                                 <td>$song </td>
                                 <td></td>
                             </tr>
                                                     <tr>
-                                <td></td>
+                                <td>\DB</td>
                                 <td>$db </td>
                                 <td></td>
                             </tr>
                                             </table>
                 
                 
-                				
+                                    <h4>Returns</h4>
+                    <a href="../classes/DataWriter.html">\DataWriter</a>
+                                    				
                             </article>
         </div>
         <aside class="span4 detailsbar">
@@ -379,26 +386,28 @@
             <article class="method">
                 <h3 class="public ">writeStack()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">writeStack(  <span class="argument">$stack</span>,   <span class="argument">$db</span>) </pre>
-                <p><em></em></p>
+                <pre class="signature" style="margin-right: 54px;">writeStack(\Stack  <span class="argument">$stack</span>, \DB  <span class="argument">$db</span>) : \DataWriter</pre>
+                <p><em>Write a stack to the database</em></p>
                 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td></td>
+                                <td><a href="../classes/Stack.html">\Stack</a></td>
                                 <td>$stack </td>
                                 <td></td>
                             </tr>
                                                     <tr>
-                                <td></td>
+                                <td>\DB</td>
                                 <td>$db </td>
                                 <td></td>
                             </tr>
                                             </table>
                 
                 
-                				
+                                    <h4>Returns</h4>
+                    <a href="../classes/DataWriter.html">\DataWriter</a>
+                                    				
                             </article>
         </div>
         <aside class="span4 detailsbar">
@@ -418,26 +427,28 @@
             <article class="method">
                 <h3 class="public ">writeArtist()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">writeArtist(  <span class="argument">$artist</span>,   <span class="argument">$db</span>) </pre>
-                <p><em></em></p>
+                <pre class="signature" style="margin-right: 54px;">writeArtist(\Artist  <span class="argument">$artist</span>, \DB  <span class="argument">$db</span>) : \DataWriter</pre>
+                <p><em>Write an atrist to the database</em></p>
                 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td></td>
+                                <td><a href="../classes/Artist.html">\Artist</a></td>
                                 <td>$artist </td>
                                 <td></td>
                             </tr>
                                                     <tr>
-                                <td></td>
+                                <td>\DB</td>
                                 <td>$db </td>
                                 <td></td>
                             </tr>
                                             </table>
                 
                 
-                				
+                                    <h4>Returns</h4>
+                    <a href="../classes/DataWriter.html">\DataWriter</a>
+                                    				
                             </article>
         </div>
         <aside class="span4 detailsbar">
@@ -457,26 +468,28 @@
             <article class="method">
                 <h3 class="public ">writeAlbum()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">writeAlbum(  <span class="argument">$album</span>,   <span class="argument">$db</span>) </pre>
-                <p><em></em></p>
+                <pre class="signature" style="margin-right: 54px;">writeAlbum(\Album  <span class="argument">$album</span>, \DB  <span class="argument">$db</span>) : \DataWriter</pre>
+                <p><em>Write an album to the database</em></p>
                 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td></td>
+                                <td><a href="../classes/Album.html">\Album</a></td>
                                 <td>$album </td>
                                 <td></td>
                             </tr>
                                                     <tr>
-                                <td></td>
+                                <td>\DB</td>
                                 <td>$db </td>
                                 <td></td>
                             </tr>
                                             </table>
                 
                 
-                				
+                                    <h4>Returns</h4>
+                    <a href="../classes/DataWriter.html">\DataWriter</a>
+                                    				
                             </article>
         </div>
         <aside class="span4 detailsbar">
@@ -496,26 +509,28 @@
             <article class="method">
                 <h3 class="public ">writeLabel()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">writeLabel(  <span class="argument">$label</span>,   <span class="argument">$db</span>) </pre>
-                <p><em></em></p>
+                <pre class="signature" style="margin-right: 54px;">writeLabel(\Label  <span class="argument">$label</span>, \DB  <span class="argument">$db</span>) : \DataWriter</pre>
+                <p><em>Write a label to the database</em></p>
                 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td></td>
+                                <td><a href="../classes/Label.html">\Label</a></td>
                                 <td>$label </td>
                                 <td></td>
                             </tr>
                                                     <tr>
-                                <td></td>
+                                <td>\DB</td>
                                 <td>$db </td>
                                 <td></td>
                             </tr>
                                             </table>
                 
                 
-                				
+                                    <h4>Returns</h4>
+                    <a href="../classes/DataWriter.html">\DataWriter</a>
+                                    				
                             </article>
         </div>
         <aside class="span4 detailsbar">
@@ -578,7 +593,7 @@
                 <section class="span10 offset1">
                     <hr />
                     Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
-                    on December 13th, 2017 at 03:06.
+                    on December 13th, 2017 at 14:41.
                 </section>
             </section>
         </section>
